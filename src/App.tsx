@@ -16,7 +16,7 @@ const App: React.FC = () => {
     "Platinum",  // From 100,000 coins to 999,999 coins
     "Diamond",   // From 1,000,000 coins to 2,000,000 coins
     "Epic",      // From 2,000,000 coins to 10,000,000 coins
-    "White HaT", // From 10,000,000 coins to 50,000,000 coins
+    "Moderator", // From 10,000,000 coins to 50,000,000 coins
     "Master",    // From 50,000,000 coins to 100,000,000 coins
     "GrandMaster", // From 100,000,000 coins to 1,000,000,000 coins
     "Lord"       // From 1,000,000,000 coins to ∞
@@ -131,15 +131,15 @@ const App: React.FC = () => {
   }, [profitPerHour]);
 
   return (
-    <div className="bg-[#919191] flex justify-center">
-      <div className="w-full bg-[#919191] text-white h-screen font-bold flex flex-col max-w-xl">
+    <div className="bg-[#839ee9] flex justify-center">
+      <div className="w-full bg-[#839ee9] text-white h-screen font-bold flex flex-col max-w-xl">
         <div className="px-4 z-10">
           <div className="flex items-center space-x-2 pt-4">
-            <div className="p-1 rounded-lg bg-[#1d2025]">
+            <div className="p-1 rounded-lg bg-[#839ee9]">
               <Hamster size={24} className="text-[#d4d4d4]" />
             </div>
             <div>
-              <p className="text-sm">CyberQuiLL</p>
+              <p className="text">World Cat</p>
             </div>
           </div>
           <div className="flex items-center justify-between space-x-4 mt-1">
@@ -150,7 +150,7 @@ const App: React.FC = () => {
                   <p className="text-sm">{levelIndex + 1} <span className="text-[#95908a]">/ {levelNames.length}</span></p>
                 </div>
                 <div className="flex items-center mt-1 border-2 border-[#43433b] rounded-full">
-                  <div className="w-full h-2 bg-[#43433b]/[0.6] rounded-full">
+                  <div className="w-full h-2 bg-[#839ee9]/[0.6] rounded-full">
                     <div className="progress-gradient h-2 rounded-full" style={{ width: `${calculateProgress()}%` }}></div>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ const App: React.FC = () => {
               <img src={binanceLogo} alt="Exchange" className="w-8 h-8" />
               <div className="h-[32px] w-[2px] bg-[#43433b] mx-2"></div>
               <div className="flex-1 text-center">
-                <p className="text-xs text-[#85827d] font-medium">Cyber-Index</p>
+                <p className="text-xs text-[#85827d] font-medium">Rank</p>
                 <div className="flex items-center justify-center space-x-1">
                   <img src={dollarCoin} alt="Dollar Coin" className="w-[18px] h-[18px]" />
                   <p className="text-sm">{formatProfitPerHour(profitPerHour)}</p>
@@ -173,25 +173,25 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex-grow mt-4 bg-[#6a6a6] rounded-t-[13px] relative top-glow z-0">
-          <div className="absolute top-[2px] left-0 right-0 bottom-0 bg-[#919191] rounded-t-[15px]">
+        <div className="flex-grow mt-4 bg-[#49494a] rounded-t-[13px] relative top-glow z-0">
+          <div className="absolute top-[2px] left-0 right-0 bottom-0 bg-[#454542] rounded-t-[15px]">
             <div className="px-4 mt-6 flex justify-between gap-2">
               <div className="bg-[#49494a] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
                 <img src={dailyReward} alt="Daily Reward" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">Cyber Index</p>
+                <p className="text-[10px] text-center text-white mt-1">Influence</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyRewardTimeLeft}</p>
               </div>
               <div className="bg-[#49494a] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
                 <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">Firewall</p>
+                <p className="text-[10px] text-center text-white mt-1">Activity</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyCipherTimeLeft}</p>
               </div>
               <div className="bg-[#49494a] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
                 <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">Daily cracks</p>
+                <p className="text-[10px] text-center text-white mt-1">Combo</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyComboTimeLeft}</p>
               </div>
             </div>

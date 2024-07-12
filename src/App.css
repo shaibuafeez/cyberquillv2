@@ -40,7 +40,7 @@ body {
 }
 
 .circle-outer {
-  background: linear-gradient(to bottom, #b2b2b2, #c1bdbd);
+  background: linear-gradient(to bottom, #ecbe04, #f7c922);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +49,7 @@ body {
   max-width: 360px;
   max-height: 360px;
   border: 2px solid #585f7e;
+
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(112, 112, 112, 0.3);
 }
