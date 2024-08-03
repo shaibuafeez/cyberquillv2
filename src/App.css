@@ -7,7 +7,7 @@ body {
 }
 
 .progress-gradient {
-  background: linear-gradient(to right, #ff7e5f, #5b4add);
+  background: linear-gradient(to right, #dbd6d5, #527edd);
 }
 
 .top-glow {
@@ -40,7 +40,7 @@ body {
 }
 
 .circle-outer {
-  background: linear-gradient(to bottom, #ecbe04, #f7c922);
+  background: linear-gradient(to bottom, #54d5f9, #54cbec);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@ body {
 }
 
 .circle-inner {
-  background: radial-gradient(circle, #b9b9b9, #bfc1cd);
+  background: radial-gradient(circle, #6ae6ef, #6ae6ef);
   display: flex;
   align-items: center;
   justify-content: center;

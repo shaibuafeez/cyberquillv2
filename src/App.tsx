@@ -130,16 +130,16 @@ const App: React.FC = () => {
     return () => clearInterval(interval);
   }, [profitPerHour]);
 
-  return (
-    <div className="bg-[#839ee9] flex justify-center">
-      <div className="w-full bg-[#839ee9] text-white h-screen font-bold flex flex-col max-w-xl">
-        <div className="px-4 z-10">
-          <div className="flex items-center space-x-2 pt-4">
-            <div className="p-1 rounded-lg bg-[#839ee9]">
-              <Hamster size={24} className="text-[#d4d4d4]" />
-            </div>
-            <div>
-              <p className="text">World Cat</p>
+    return (
+      <div className="bg-[#6ae6ef] flex justify-center">
+        <div className="w-full bg-[#f954af] text-white h-screen font-bold flex flex-col max-w-xl">
+          <div className="px-4 z-10">
+            <div className="flex items-center space-x-2 pt-4">
+              <div className="p-1 rounded-lg bg-[#f954af]">
+                <Hamster size={24} className="text-[#d4d4d4]" />
+              </div>
+              <div>
+                <p className="text">HSUI</p>
             </div>
           </div>
           <div className="flex items-center justify-between space-x-4 mt-1">
@@ -173,7 +173,7 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex-grow mt-4 bg-[#49494a] rounded-t-[13px] relative top-glow z-0">
+        <div className="flex-grow mt-4 bg-[#f954af] rounded-t-[13px] relative top-glow z-0">
           <div className="absolute top-[2px] left-0 right-0 bottom-0 bg-[#454542] rounded-t-[15px]">
             <div className="px-4 mt-6 flex justify-between gap-2">
               <div className="bg-[#49494a] rounded-lg px-4 py-2 w-full relative">
